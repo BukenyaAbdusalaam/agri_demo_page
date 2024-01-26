@@ -103,6 +103,25 @@ class Agri_demo extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Row(
+            children: [
+              Column(
+                children: [Icon(Icons.explore), Text('Explore')],
+              ),
+              Column(
+                children: [Icon(Icons.favorite), Text('Favorite')],
+              ),
+              Column(
+                children: [Icon(Icons.home), Text('Home')],
+              ),
+              Column(
+                children: [Icon(Icons.notifications), Text('Notification')],
+              ),
+              Column(
+                children: [Icon(Icons.settings), Text('Settings')],
+              )
+            ],
           )
         ],
       ),
