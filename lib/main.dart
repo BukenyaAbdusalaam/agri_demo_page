@@ -13,6 +13,22 @@ class Agri_demo extends StatelessWidget {
         backgroundColor: Colors.green,
         title: Text('AgriSonic'),
       ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.location_pin,
+                color: Colors.red,
+              ),
+              Text(
+                'Getting Location....',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
