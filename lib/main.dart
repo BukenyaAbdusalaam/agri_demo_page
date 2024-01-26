@@ -26,6 +26,22 @@ class Agri_demo extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ],
+          ),
+          Row(
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Color.fromARGB(255, 149, 245, 152),
+                width: 48.0,
+                height: 48.0,
+              ),
+              Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Color.fromARGB(255, 149, 245, 152),
+                width: 48.0,
+                height: 48.0,
+              ),
+            ],
           )
         ],
       ),
