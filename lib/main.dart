@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() => runApp(MaterialApp(
       home: Agri_demo(),
@@ -28,18 +30,23 @@ class Agri_demo extends StatelessWidget {
             ],
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                margin: const EdgeInsets.all(10.0),
-                color: Color.fromARGB(255, 149, 245, 152),
-                width: 48.0,
-                height: 48.0,
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  color: Color.fromARGB(255, 160, 242, 163),
+                  width: 48.0,
+                  height: 140.0,
+                ),
               ),
-              Container(
-                margin: const EdgeInsets.all(10.0),
-                color: Color.fromARGB(255, 149, 245, 152),
-                width: 48.0,
-                height: 48.0,
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  color: Color.fromARGB(255, 160, 242, 163),
+                  width: 48.0,
+                  height: 140.0,
+                ),
               ),
             ],
           )
