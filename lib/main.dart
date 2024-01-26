@@ -53,6 +53,56 @@ class Agri_demo extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 140.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 140.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 140.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 140.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                ),
+              ),
+            ],
           )
         ],
       ),
