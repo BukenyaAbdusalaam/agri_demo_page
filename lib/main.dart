@@ -40,6 +40,14 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(30.0))),
+                  child: Column(
+                    children: [
+                      Text('Temp:'),
+                      Text('Humidity:'),
+                      Text('Wind Speed:'),
+                      Text('Pressure:')
+                    ],
+                  ),
                 ),
               )
             ],
