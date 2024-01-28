@@ -40,14 +40,22 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(30.0))),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Text('Temp:'),
-                      Text('Humidity:'),
-                      Text('Wind Speed:'),
-                      Text('Pressure:')
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Temp:',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        Text('Humidity:',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        Text('Wind Speed:',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        Text('Pressure:',
+                            style: TextStyle(fontWeight: FontWeight.bold))
+                      ],
+                    ),
                   ),
                 ),
               )
@@ -73,7 +81,10 @@ class Agri_demo extends StatelessWidget {
                           height: 50.0,
                         ),
                       ),
-                      Text('Crop prediction')
+                      Text(
+                        'Crop prediction',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      )
                     ],
                   ),
                 ),
@@ -91,60 +102,12 @@ class Agri_demo extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(20.0),
                         child: Image.asset(
-                          'assets/prediction.png',
+                          'assets/nutrient.png',
                           height: 50.0,
                         ),
                       ),
-                      Text('Crop prediction')
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Expanded(
-                child: Container(
-                  margin: const EdgeInsets.all(10.0),
-                  width: 48.0,
-                  height: 124.0,
-                  decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 160, 242, 163),
-                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Image.asset(
-                          'assets/prediction.png',
-                          height: 50.0,
-                        ),
-                      ),
-                      Text('Crop prediction')
-                    ],
-                  ),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  margin: const EdgeInsets.all(10.0),
-                  width: 48.0,
-                  height: 124.0,
-                  decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 160, 242, 163),
-                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Image.asset(
-                          'assets/prediction.png',
-                          height: 50.0,
-                        ),
-                      ),
-                      Text('Crop prediction')
+                      Text('Nutrient Recommendation',
+                          style: TextStyle(fontWeight: FontWeight.bold))
                     ],
                   ),
                 ),
@@ -167,11 +130,63 @@ class Agri_demo extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(20.0),
                         child: Image.asset(
-                          'assets/prediction.png',
+                          'assets/nearby.png',
                           height: 50.0,
                         ),
                       ),
-                      Text('Crop prediction')
+                      Text('Nearby Buyers',
+                          style: TextStyle(fontWeight: FontWeight.bold))
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 124.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/crop info.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop Information',
+                          style: TextStyle(fontWeight: FontWeight.bold))
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Expanded(
+                child: Container(
+                  margin: const EdgeInsets.all(10.0),
+                  width: 48.0,
+                  height: 124.0,
+                  decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 160, 242, 163),
+                      borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/farm assist.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Farm Assistant',
+                          style: TextStyle(fontWeight: FontWeight.bold))
                     ],
                   ),
                 ),
@@ -193,7 +208,8 @@ class Agri_demo extends StatelessWidget {
                           height: 50.0,
                         ),
                       ),
-                      Text('Crop prediction')
+                      Text('Pest and Diseas prediction',
+                          style: TextStyle(fontWeight: FontWeight.bold))
                     ],
                   ),
                 ),
@@ -207,19 +223,38 @@ class Agri_demo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Column(
-                  children: [Icon(Icons.explore), Text('Explore')],
+                  children: [
+                    Icon(Icons.explore),
+                    Text('Explore',
+                        style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
                 ),
                 Column(
-                  children: [Icon(Icons.favorite), Text('Favorite')],
+                  children: [
+                    Icon(Icons.favorite),
+                    Text('Favorite',
+                        style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
                 ),
                 Column(
-                  children: [Icon(Icons.home), Text('Home')],
+                  children: [
+                    Icon(Icons.home),
+                    Text('Home', style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
                 ),
                 Column(
-                  children: [Icon(Icons.notifications), Text('Notification')],
+                  children: [
+                    Icon(Icons.notifications),
+                    Text('Notification',
+                        style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
                 ),
                 Column(
-                  children: [Icon(Icons.settings), Text('Settings')],
+                  children: [
+                    Icon(Icons.settings),
+                    Text('Settings',
+                        style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
                 )
               ],
             ),
