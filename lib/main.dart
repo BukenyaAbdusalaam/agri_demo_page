@@ -41,6 +41,7 @@ class Agri_demo extends StatelessWidget {
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(30.0))),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text('Temp:'),
                       Text('Humidity:'),
@@ -63,6 +64,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
               Expanded(
@@ -73,6 +86,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -88,6 +113,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
               Expanded(
@@ -98,6 +135,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -113,6 +162,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
               Expanded(
@@ -123,6 +184,18 @@ class Agri_demo extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Color.fromARGB(255, 160, 242, 163),
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Image.asset(
+                          'assets/prediction.png',
+                          height: 50.0,
+                        ),
+                      ),
+                      Text('Crop prediction')
+                    ],
+                  ),
                 ),
               ),
             ],
