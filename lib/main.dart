@@ -202,12 +202,12 @@ class Agri_demo extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(20.0),
-                        child: Image.asset(
-                          'assets/prediction.png',
-                          height: 50.0,
-                        ),
-                      ),
+                          padding: const EdgeInsets.all(20.0),
+                          child: FloatingActionButton(
+                            onPressed: () {},
+                            child: Icon(Icons.add),
+                            backgroundColor: Colors.blue,
+                          )),
                       Text('Pest and Diseas prediction',
                           style: TextStyle(fontWeight: FontWeight.bold))
                     ],
