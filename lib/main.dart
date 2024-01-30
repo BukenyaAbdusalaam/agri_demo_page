@@ -211,7 +211,11 @@ class _Agri_demoState extends State<Agri_demo> {
                       Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: FloatingActionButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                temp += 1;
+                              });
+                            },
                             child: Icon(Icons.add),
                             backgroundColor: Colors.blue,
                           )),
