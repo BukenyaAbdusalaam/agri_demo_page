@@ -14,6 +14,7 @@ class Agri_demo extends StatefulWidget {
 }
 
 class _Agri_demoState extends State<Agri_demo> {
+  int temp = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +53,7 @@ class _Agri_demoState extends State<Agri_demo> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Temp:',
+                        Text('Temp: $temp',
                             style: TextStyle(fontWeight: FontWeight.bold)),
                         Text('Humidity:',
                             style: TextStyle(fontWeight: FontWeight.bold)),
