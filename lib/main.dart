@@ -6,8 +6,14 @@ void main() => runApp(MaterialApp(
       home: Agri_demo(),
     ));
 
-class Agri_demo extends StatelessWidget {
+class Agri_demo extends StatefulWidget {
   const Agri_demo({super.key});
+
+  @override
+  State<Agri_demo> createState() => _Agri_demoState();
+}
+
+class _Agri_demoState extends State<Agri_demo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
