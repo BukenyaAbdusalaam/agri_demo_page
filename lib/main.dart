@@ -217,7 +217,8 @@ class _Agri_demoState extends State<Agri_demo> {
                               });
                             },
                             child: Icon(Icons.add),
-                            backgroundColor: Colors.blue,
+                            backgroundColor:
+                                const Color.fromARGB(255, 27, 146, 243),
                           )),
                       Text('Pest and Diseas prediction',
                           style: TextStyle(fontWeight: FontWeight.bold))
